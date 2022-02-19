@@ -205,6 +205,18 @@ export class Topic extends Base implements AbstractTopic {
     return this.lastId;
   }
 
+  public lastCid(title?: string): string | null {
+    if (title && typeof title === 'string') {
+      for (const topicId of Object.keys(this.resources).reverse()) {
+        if (this.resources[topicId] === title) {
+          return topicId;
+        }
+      }
+      return null;
+    }
+    return this.lastId;
+  }
+
   public cids(): TypedResource {
     return this.resources;
   }
