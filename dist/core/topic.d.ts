@@ -23,6 +23,12 @@ export declare class Topic extends Base implements AbstractTopic {
      */
     on(componentId?: string): Topic;
     /**
+     * Sets structureClass to topic
+     * @param structureClass - New structure class
+     * @returns Topic - The instance of class Topic
+     */
+    setStructureClass(structureClass: string): Topic;
+    /**
      * Add label to topic
      * @param text - A label string
      * @returns Topic - The instance of class Topic

@@ -37,6 +37,15 @@ class Topic extends base_1.default {
         return this;
     }
     /**
+     * Sets structureClass to topic
+     * @param structureClass - New structure class
+     * @returns Topic - The instance of class Topic
+     */
+    setStructureClass(structureClass) {
+        this.current().changeStructureClass(structureClass);
+        return this;
+    }
+    /**
      * Add label to topic
      * @param text - A label string
      * @returns Topic - The instance of class Topic
