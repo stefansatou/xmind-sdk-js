@@ -6,12 +6,14 @@ const v4 = require("uuid/v4");
 const Robust = require("../common/themes/robust.json");
 const Snowbrush = require("../common/themes/snowbrush.json");
 const Business = require("../common/themes/snowbrush.json");
+const Dawn = require("../common/themes/dawn.json");
 const debug = Debug('xmind-sdk:theme');
-const ALLOWED_THEMES = ['robust', 'snowbrush', 'business'];
+const ALLOWED_THEMES = ['robust', 'snowbrush', 'business', 'dawn'];
 const THEMES = {
     robust: Robust,
     snowbrush: Snowbrush,
     business: Business,
+    dawn: Dawn,
 };
 /**
  * @description Invisible external

@@ -5,9 +5,10 @@ import * as Model from '../common/model';
 import Robust = require('../common/themes/robust.json');
 import Snowbrush = require('../common/themes/snowbrush.json');
 import Business = require('../common/themes/snowbrush.json');
+import Dawn = require('../common/themes/dawn.json');
 
 const debug = Debug('xmind-sdk:theme');
-const ALLOWED_THEMES = ['robust', 'snowbrush', 'business'];
+const ALLOWED_THEMES = ['robust', 'snowbrush', 'business', 'dawn'];
 
 interface ThemeOptions {
   themeName: string;
@@ -17,6 +18,7 @@ const THEMES = {
   robust: Robust,
   snowbrush: Snowbrush,
   business: Business,
+  dawn: Dawn,
 };
 
 /**
